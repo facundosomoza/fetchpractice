@@ -4,15 +4,11 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
 const NavigationBar = ({ handleActiveModule }) => {
-  const urlLogo =
-    "https://facundosomoza.github.io/fetchpractice/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg";
-
   return (
     <div>
       <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand onClick={() => handleActiveModule("")}>
-            <img src={urlLogo} height={100} />
             <span>Fetch Practice</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
